@@ -37,5 +37,8 @@ call matchadd('ColorColumn', '\%81v', 100)
 nmap ;l :call ListTrans_toggle_format()<CR>
 vmap ;l :call ListTrans_toggle_format('visual')<CR>
 
+"====[ Pathogen: http://www.vim.org/scripts/script.php?script_id=2332 ]===
+execute pathogen#infect()
+
 " When vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
